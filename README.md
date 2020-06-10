@@ -1,1 +1,1 @@
-/* Add Author and Project Details here */
+Program made for Embedded Systems course of Coursera
