@@ -9,35 +9,102 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Header File
+ 
  *
- * <Add Extended Description Here>
+ * @author Alexander Arancibia
+ * @date 09/06/2020
+ */
+#ifndef __STATS_H__
+#define __STATS_H__
+
+
+/**
+ * @brief Find the median of an array
+ * This funtion takes an unidimensional array and find the 
+ * median
+ * @param test the array itself
+ * @param count the size of the array
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @return The median of the array
+ */
+float find_median(unsigned char test[], int count);
+
+/**
+ * @brief Find the mean of an array
+ * This funtion takes an unidimensional array and find the 
+ * mean
+ * @param test the array itself
+ * @param count the size of the array
  *
+ * @return The mean of the array
+ */
+
+float find_mean(unsigned char test[], int count);
+
+/**
+ * @brief Find the maximun of an array
+ * This funtion takes an unidimensional array and find the 
+ * maximun
+ * @param test the array itself
+ * @param count the size of the array
+ *
+ * @return The maximun of the array
+ */
+
+int find_maximun(unsigned char test[], int count);
+
+/**
+ * @brief Find the minimun of an array
+ * This funtion takes an unidimensional array and find the 
+ * minimun
+ * @param test the array itself
+ * @param count the size of the array
+ *
+ * @return The minimun of the array
+ */ 
+
+int find_minimun(unsigned char test[], int count);
+
+/**
+ * @brief Print all the elements of the array
+ * This funtion takes an unidimensional array and find the 
+ * median
+ * @param test the array itself
+ * @param count the size of the array
+ *
+ * @return 
  */
 
 
+void print_array(unsigned char test[], int count);
 
-#include <stdio.h>
-#include "stats.h"
+/**
+ * @brief Print all the stadistic of the array
+ * Print the minimun,maximun,mean and median
+ * @param minimun minimun of the arrays previously finded
+ * @param maximun maximun of the arrays previously finded
+ * @param mean mean of the arrays previously finded
+ * @param median median of the arrays previously finded
+ *
+ * @return 
+ */ 
 
-/* Size of the Data Set */
-#define SIZE (40)
 
-void main() {
+void print_stadistics(int minimun,int maximun, float mean, float median);
 
-  unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
-                              114, 88,   45,  76, 123,  87,  25,  23,
-                              200, 122, 150, 90,   92,  87, 177, 244,
-                              201,   6,  12,  60,   8,   2,   5,  67,
-                                7,  87, 250, 230,  99,   3, 100,  90};
+/**
+ * @brief Sort an array
+ 
+ * @param test the array itself
+ * @param count the size of the array
+ *
+ * @return Sorted array
+ */
 
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
 
-}
+void sort_array(unsigned char test[], int count);
 
-/* Add other Implementation File Code Here */
+
+#endif /* __STATS_H__ */
