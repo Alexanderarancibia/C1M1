@@ -118,7 +118,7 @@ int find_minimun(unsigned char test[], int count){
   	 
 
 int find_mean(unsigned char test[], int count){
-  float mean = 0;
+  int mean = 0;
   int i=0;
    for(i =0;i<count;i++){
   	mean +=test[i];
