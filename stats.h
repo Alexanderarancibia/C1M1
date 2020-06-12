@@ -29,7 +29,7 @@
  *
  * @return The median of the array
  */
-float find_median(unsigned char test[], int count);
+int find_median(unsigned char test[], int count);
 
 /**
  * @brief Find the mean of an array
@@ -41,7 +41,7 @@ float find_median(unsigned char test[], int count);
  * @return The mean of the array
  */
 
-float find_mean(unsigned char test[], int count);
+int find_mean(unsigned char test[], int count);
 
 /**
  * @brief Find the maximun of an array
