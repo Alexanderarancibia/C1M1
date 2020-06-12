@@ -25,17 +25,11 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
-float find_median(unsigned char test[], int count);
-float find_mean(unsigned char test[], int count);
-int find_maximun(unsigned char test[], int count);
-int find_minimun(unsigned char test[], int count);
-void print_array(unsigned char test[], int count);
-void print_stadistics(int minimun,int maximun, float mean, float median);
-void sort_array(unsigned char test[], int count);
+
 
 void main() {
-	float median;
-	float mean;
+	int median;
+	int mean;
 	int maximun;
 	int minimun;
 	
@@ -90,7 +84,7 @@ void sort_array(unsigned char test[], int count){
 
 
 
-float find_median(unsigned char test[], int count){
+int find_median(unsigned char test[], int count){
   if (count%2 ==0){
   	return ((float)(test[count/2-1])/2+(float)test[count/2]/2);}
   else{
@@ -123,7 +117,7 @@ int find_minimun(unsigned char test[], int count){
 }
   	 
 
-float find_mean(unsigned char test[], int count){
+int find_mean(unsigned char test[], int count){
   float mean = 0;
   int i=0;
    for(i =0;i<count;i++){
